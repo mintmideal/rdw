@@ -1,11 +1,14 @@
 # rdw
+
 really different workspaces (for Cinnamon with X)
 
 Use different
+
 - wallpapers,
 - themes and
 - selections of desktop links and files
-on every workspace you have setup.
+
+on every workspace you have set up.
 
 It began with my wish to have a simple wallpaper changer -
 not the usual, playful one which periodically exchanges your current wallpaper.
@@ -17,15 +20,11 @@ to always see what I'm doing (or more to concentrate on that).
 There was a script called I found somewhere to do exactly that, I think it was called "wdis".
 It must be 10+ years ago, the pandemic reset my longtime memory...) containing the essential 
 
-xprop -root -spy _NET_CURRENT_DESKTOP | (
-
-   while read -r; do
-   
-      desk=${REPLY:${#REPLY}-1:1}
-      
-      setdesktop ${desktop_img[$desk]}
-
-   done)
+      xprop -root -spy _NET_CURRENT_DESKTOP | (
+         while read -r; do
+            desk=${REPLY:${#REPLY}-1:1}
+            setdesktop ${desktop_img[$desk]}
+         done)
 
 No idea where this comes from, and can't be found anymore (it's not from the Linux Mint forum entry by dj1s).
 I never intended to redistribute it so I didn't save the original file, but after my enhancements used asked for it.
