@@ -1,5 +1,11 @@
 # rdw
 
+** DEFERRED DUE TO CURRENT PROBLEM WITH CINNAMON! **
+Currently sometimes the last open program windows stays visible after closing it, and persists even after changing the workspace.
+
+
+
+
 really different workspaces (for Cinnamon with X)
 
 Use different
